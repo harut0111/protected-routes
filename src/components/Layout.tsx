@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import Auth from "./Auth";
 
-const Layout = () => {
-    return (
-        <div className='layout'>
-            <p>App Layout</p>
-        </div>
-    )
-}
+const Layout = (props: { history: string[] }) => {
+  return (
+    <div className="layout">
+      <h1>App Layout</h1>
+      <button
+        onClick={() => {
+          Auth.logout(() => {
+            props.history.push("/");
+          });
+        }}
+      >
+        Logout
+      </button>
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;

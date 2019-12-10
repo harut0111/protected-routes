@@ -3,4 +3,15 @@
   background-color: #282c34;
   min-height: 100vh;
   color: #ffffff;
+  min-height: 200px;
+  width: 500px;
+  border: 1px dashed gainsboro;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
